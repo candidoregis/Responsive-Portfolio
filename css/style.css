@@ -1,29 +1,29 @@
 
 /* Remaining To Do list:
     1 - Media query for 640px
-        - fix top header with empty space above
-        - fix line height
+        - fix top header with empty space above (fixed)
+        - fix line height (fixed)
         - fix h1 tag height and top distance
         - increase margin nav a
         - correct photo size?
         - fix margin from container
         - fix photo size and position in portfolio
-        - remove dots in contact
-        - align items in contact
+        - remove dots in contact(fixed )
+        - align items in contact(fixed )
 
     2 - Media query for 768px
-        - fix top header with empty space above
+        - fix top header with empty space above (fixed)
         - fix margin from container
-        - fix line height
-        - remove dots in contact
-        - align items in contact
+        - fix line height (fixed )
+        - remove dots in contact (fixed )
+        - align items in contact (fixed )
 
     3 - Media query for 980px
         - keep container on the left side when width is greater than 980px
         - fix margin from container
-        - fix line height
-        - remove dots in contact
-        - align items in contact
+        - fix line height (fixed )
+        - remove dots in contact (fixed )
+        - align items in contact (fixed)
         */
 
 body {
@@ -87,6 +87,8 @@ body {
     margin: 0 0 30px;
     overflow: auto;
     color: #ffffff;
+    top: 0px;
+    left: 0px;
     background: #ffffff;
     border-bottom: 2px solid #cccccc;
   }
@@ -108,13 +110,14 @@ body {
   nav {
     float: right;
     margin-top: 25px;
+    padding-right: 40px;
   }
   
   nav a {
     display: inline-block;
     padding-left: 15px;
     margin-left: 15px;
-    line-height: 18px;
+    line-height: 22px;
     color: #999;
     text-decoration: none;
     border-left: 1px solid #efefef;
@@ -215,6 +218,7 @@ body {
   
   #contact-form ul {
     margin-bottom: 20px;
+    padding-left: 0;
   }
   
   #contact-form li {
@@ -251,6 +255,10 @@ body {
     border: 0 none;
   }
   
+  li {
+    list-style-type: none;
+}
+
 @media screen and (max-width: 640px) {
     
     #pageHeader {
@@ -280,7 +288,7 @@ body {
 
     p {
         font-size: 12px;
-        line-height: 15px;
+        line-height: 22px;
     }  
 }
 
@@ -313,7 +321,7 @@ body {
 
     p {
         font-size: 14px;
-        line-height: 16px;
+        line-height: 22px;
     }
 }
 
